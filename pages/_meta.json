@@ -1,15 +1,15 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
+  "index": "Overview",
+  "installation": "Installation",
+  "conversions": "conversions",
+  "manipulation": "manipulation",
+  "info-extraction": "info-extraction",
+  "parsing": "parsing",
+  "validation": "validation",
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://github.com/carloskim123",
     "newWindow": true
   }
 }

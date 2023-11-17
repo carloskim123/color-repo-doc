@@ -1,0 +1,53 @@
+# Color Validation
+
+
+Color Repo Kim provides methods to validate different formats of colors.
+
+## Validating HEX Color Format
+
+To check if a color string follows the HEX format (e.g., "#RRGGBB" or "RRGGBB"):
+
+```javascript
+const hexColor = '#00FF00';
+
+// Validate HEX color format
+const isValidHex = validateModule.isValidHex(hexColor);
+console.log(`Is "${hexColor}" a valid HEX color?`, isValidHex); 
+// Output: Is "#00FF00" a valid HEX color? true
+```
+
+
+## Validating RGB Color Values
+To ensure that the RGB color values are within the valid range (0-255):
+
+```javascript
+const rgbColor = { r: 255, g: 128, b: 64 };
+
+// Validate RGB color values
+const isValidRgb = validateModule.isValidRgb(rgbColor);
+console.log(`Are the RGB values ${rgbColor.r}, ${rgbColor.g}, ${rgbColor.b}`);
+
+
+```
+
+## Validating HSL Color Values
+To verify that the HSL color values are within the acceptable range:
+
+```javascript
+const hslColor = { h: 200, s: 50, l: 70 };
+
+// Validate HSL color values
+const isValidHsl = validateModule.isValidHsl(hslColor);
+console.log(`Are the HSL values ${hslColor.h}, ${hslColor.s}, ${hslColor.l} valid`)
+```
+
+## Validating HEX Color values
+
+``isValidHex(hex: string): boolean``
+Checks if the provided string is a valid HEX color format.
+
+```javascript
+const hexColor = '#00FF00';
+const isValidHex = validateModule.isValidHex(hexColor);
+// Output: true
+```

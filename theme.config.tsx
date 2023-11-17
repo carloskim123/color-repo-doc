@@ -2,17 +2,30 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://github.com/carloskim123/rebuild-docs',
   },
   chat: {
     link: 'https://discord.com',
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: 'https://github.com/carloskim123/rebuild-docs',
   footer: {
-    text: 'Nextra Docs Template',
+    text: 'Color Repo Kim',
   },
+   useNextSeoProps() {
+    return {
+      titleTemplate: '%s – SWR'
+    }
+  },
+   logo: (
+    <>
+      <div>🌚</div>
+      <span style={{ marginLeft: '.4em', fontWeight: 800 }}>
+        Color Repo Kim
+      </span>
+    </>
+  ),
+  faviconGlyph: "🌚"
 }
 
 export default config

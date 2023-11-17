@@ -1,0 +1,84 @@
+# Conversions
+
+## RGB to HEX
+
+To convert an RGB color to HEX, use the `rgbToHex` method:
+
+```javascript
+import { ColorRepoKim } from 'color-repo-kim'
+
+const rgbColor = { r: 255, g: 0, b: 0 };
+const hexColor = ColorRepoKim.convert.rgbToHex(rgbColor);
+
+console.log('RGB Color:', rgbColor);
+console.log('HEX Color:', hexColor);
+```
+
+## HEX to RGB
+Converting a HEX color to RGB is just as straightforward:
+
+```javascript
+import { ColorRepoKim } from 'color-repo-kim'
+
+const hexColor = '#ff0000';
+const rgbColor = ColorRepoKim.convert.hexToRgb(hexColor);
+
+console.log('HEX Color:', hexColor);
+console.log('RGB Color:', rgbColor);
+```
+
+## RGB to HSL
+To convert an RGB color to HSL, use the rgbToHsl method:
+
+```javascript
+import { ColorRepoKim } from 'color-repo-kim'
+
+const rgbColor = { r: 255, g: 0, b: 0 };
+const hslColor = ColorRepoKim.convert.rgbToHsl(rgbColor);
+
+console.log('RGB Color:', rgbColor);
+console.log('HSL Color:', hslColor);
+```
+
+## HSL to RGB
+Converting HSL back to RGB is done with the hslToRgb method:
+
+```javascript
+import { ColorRepoKim } from 'color-repo-kim'
+
+const hslColor = { h: 0, s: 100, l: 50 };
+const rgbColor = ColorRepoKim.convert.hslToRgb(hslColor);
+
+console.log('HSL Color:', hslColor);
+console.log('RGB Color:', rgbColor);
+```
+
+
+## HSL to HEX
+To convert an HSL color to HEX, you can combine the hslToRgb and rgbToHex methods:
+
+```javascript
+import { ColorRepoKim } from 'color-repo-kim'
+
+const hslColor = { h: 0, s: 100, l: 50 };
+const rgbColor = ColorRepoKim.convert.hslToRgb(hslColor);
+const hexColor = ColorRepoKim.convert.rgbToHex(rgbColor);
+
+console.log('HSL Color:', hslColor);
+console.log('HEX Color:', hexColor);
+
+```
+
+## HEX to HSL
+Converting HEX to HSL involves using the hexToRgb and rgbToHsl methods:
+
+```javascript
+import { ColorRepoKim } from 'color-repo-kim'
+
+const hexColor = '#ff0000';
+const rgbColor = ColorRepoKim.convert.hexToRgb(hexColor);
+const hslColor = ColorRepoKim.convert.rgbToHsl(rgbColor);
+
+console.log('HEX Color:', hexColor);
+console.log('HSL Color:', hslColor);
+```

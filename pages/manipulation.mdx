@@ -1,0 +1,116 @@
+# Color Manipulation
+
+Color Repo Kim provides a set of powerful color manipulation methods to enhance your color-related tasks. Whether you need to generate complementary colors, create harmonious palettes, or apply various effects, Color Repo Kim has got you covered.
+
+## Introduction
+
+Color manipulation involves changing the properties of a color, such as its hue, saturation, and lightness, to achieve specific visual effects. This section introduces you to several color manipulation methods available in color-repo-kim and demonstrates how to use them effectively.
+
+## Complementary Color
+
+The `getComplementaryColor` method allows you to obtain the complementary color of a given color:
+
+```javascript
+import { ColorRepoKim } from 'color-repo-kim'
+
+const baseColor = { r: 255, g: 0, b: 0 };
+const complementaryColor = ColorRepoKim.manipulate.getComplementaryColor(baseColor);
+
+console.log('Base Color:', baseColor);
+console.log('Complementary Color:', complementaryColor);
+```
+
+
+## Analogous Colors
+Use the getAnalogousColors method to get an array of analogous colors for a given color:
+
+```javascript
+import { ColorRepoKim } from 'color-repo-kim'
+
+const baseColor = { r: 255, g: 0, b: 0 };
+const analogousColors = ColorRepoKim.manipulate.getAnalogousColors(baseColor);
+
+console.log('Base Color:', baseColor);
+console.log('Analogous Colors:', analogousColors);
+```
+
+## Triadic Colors
+The getTriadicColors method provides an array of triadic colors for a given color:
+
+```javascript
+import { ColorRepoKim } from 'color-repo-kim'
+
+const baseColor = { r: 255, g: 0, b: 0 };
+const triadicColors = ColorRepoKim.manipulate.getTriadicColors(baseColor);
+
+console.log('Base Color:', baseColor);
+console.log('Triadic Colors:', triadicColors);
+```
+
+
+## Tetradic Colors
+Obtain an array of tetradic colors using the getTetradicColors method:
+
+```javascript
+import { ColorRepoKim } from 'color-repo-kim'
+
+const baseColor = { r: 255, g: 0, b: 0 };
+const tetradicColors = ColorRepoKim.manipulate.getTetradicColors(baseColor);
+
+console.log('Base Color:', baseColor);
+console.log('Tetradic Colors:', tetradicColors);
+```
+
+## Monochromatic Colors
+Generate monochromatic colors using the getMonochromaticColors method:
+
+```javascript
+import { ColorRepoKim } from 'color-repo-kim'
+
+const baseColor = { r: 255, g: 0, b: 0 };
+const monochromaticColors = ColorRepoKim.manipulate.getMonochromaticColors(baseColor, 5);
+
+console.log('Base Color:', baseColor);
+console.log('Monochromatic Colors:', monochromaticColors);
+
+```
+
+## Lighten Color
+Lighten a color using the lightenColor method:
+
+```javascript
+import { ColorRepoKim } from 'color-repo-kim'
+
+const baseColor = { r: 255, g: 0, b: 0 };
+const lightenedColor = ColorRepoKim.manipulate.lightenColor(baseColor, 20);
+
+console.log('Base Color:', baseColor);
+console.log('Lightened Color:', lightenedColor);
+```
+
+## Darken Color
+Darken a color using the darkenColor method:
+
+```javascript
+import { ColorRepoKim } from 'color-repo-kim'
+
+const baseColor = { r: 255, g: 0, b: 0 };
+const darkenedColor = ColorRepoKim.manipulate.darkenColor(baseColor, 20);
+
+console.log('Base Color:', baseColor);
+console.log('Darkened Color:', darkenedColor);
+```
+
+## Invert Color
+Invert a color using the invertColor method:
+
+```javascript
+Copy code
+import { ColorRepoKim } from 'color-repo-kim'
+
+const baseColor = { r: 255, g: 0, b: 0 };
+const invertedColor = ColorRepoKim.manipulate.invertColor(baseColor);
+
+console.log('Base Color:', baseColor);
+console.log('Inverted Color:', invertedColor);
+```

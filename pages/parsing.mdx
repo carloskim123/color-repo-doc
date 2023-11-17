@@ -1,0 +1,32 @@
+Color Repo Kim offers methods to parse and convert colors between different formats such as HEX, RGB, and CSS color names.
+
+## Parsing HEX to RGB
+
+The `hexToRgb` method converts a HEX color code to its RGB equivalent:
+
+```javascript
+import { ColorRepoKim } from 'color-repo-kim'
+
+const hexColor = '#ff0000';
+const rgbColor = ColorRepoKim.parse.hexToRgb(hexColor);
+
+console.log('HEX Color:', hexColor);
+console.log('RGB Color:', rgbColor);
+```
+
+
+
+
+## Parsing CSS Color Names to RGB
+
+The cssNameToRgb method parses CSS color names into their RGB representations:
+
+```javascript
+import { ColorRepoKim } from 'color-repo-kim'
+
+const cssColorName = 'red';
+const rgbColor = ColorRepoKim.parse.cssNameToRgb(cssColorName);
+
+console.log('CSS Color Name:', cssColorName);
+console.log('RGB Color:', rgbColor);
+```

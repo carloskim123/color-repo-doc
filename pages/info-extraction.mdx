@@ -1,0 +1,68 @@
+# Information Extraction
+
+
+The `info` module in Color Repo Kim facilitates extracting color information and performing color analysis.
+
+
+
+## getDominantColor
+
+Finds the dominant color from an array of colors.
+
+- `colors`: An array of color objects.
+
+```javascript
+// Import the ColorRepoKim Object
+import { ColorRepoKim } from 'color-repo-kim';
+
+// For easy access to the infoModule
+
+const infoModule = ColorRepoKim.info;
+
+// Sample colors array
+const colorsArray = [
+  { r: 255, g: 0, b: 0 },
+  { r: 0, g: 255, b: 0 },
+  { r: 0, g: 0, b: 255 },
+  { r: 255, g: 255, b: 0 },
+];
+
+// Finding the dominant color
+const dominantColor = infoModule.getDominantColor(colorsArray);
+console.log('Dominant Color:', dominantColor); 
+
+// Output: Dominant Color: { r: 255, g: 0, b: 0 }
+```
+
+**Returns**: The dominant color from the provided array. If no dominant color is found, it defaults to black (`{ r: 0, g: 0, b: 0 }`).
+
+## getAverageColor
+
+Calculates the average color from an array of colors.
+
+- `colors`: An array of color objects.
+
+```javascript 
+// Import the ColorRepoKim Object
+import { ColorRepoKim } from 'color-repo-kim';
+
+// For easy access to the infoModule
+
+const infoModule = ColorRepoKim.info;
+
+// Sample colors array
+const colorsArray = [
+  { r: 255, g: 0, b: 0 },
+  { r: 0, g: 255, b: 0 },
+  { r: 0, g: 0, b: 255 },
+  { r: 255, g: 255, b: 0 },
+];
+
+// Finding the average color
+const averageColor = infoModule.getAverageColor(colorsArray);
+console.log('Average Color:', averageColor); 
+// Output: Average Color: { r: 127, g: 127, b: 127 }
+```
+
+
+**Returns**: The average color obtained from the provided array.
