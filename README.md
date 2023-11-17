@@ -1,23 +1,105 @@
-# Nextra Docs Template 
+ ****IMPORTANT: If you're using v1.0.0 of color-repo-kim in an ES6 environment and encountering the 'Cannot use import outside a module' error, please run ```npm install color-repo-kim@latest``` to resolve the issue and install the latest version (v2.0.0).***
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+# Color Repo Kim Official Docs
+**this readme is still a work in progress. Some info might be out of place**
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+Color Repo is a lightweight JavaScript library for seamless color manipulation and analysis. It provides a collection of methods to manipulate, analyze, and convert colors easily.
 
-## Quick Start
+#### Installation
 
-Click the button to clone this repository and deploy it on Vercel:
+```bash
+npm install color-repo-kim
+```
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+or using cdn.jsdelivr.:
+```bash
+https://cdn.jsdelivr.net/npm/color-repo-kim@1.0.0
+```
+#### Usage
 
-## Local Development
+#### Basic Example
 
-First, run `pnpm i` to install the dependencies.
 
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
 
-## License
+```javascript
+const { ColorRepoKim  } = require('color-repo-kim');
 
-This project is licensed under the MIT License.
+// Define a sample color
+const sampleColor = { r: 255, g: 0, b: 0 };
+
+// Get the complementary color
+const complementaryColor = ColorRepoKim .manipulate.getComplementaryColor(sampleColor);
+
+// Display results
+console.log('Sample Color:', sampleColor);
+console.log('Complementary Color:', complementaryColor);`
+```
+
+Expected output:
+
+``` javascript
+Sample Color: { r: 255, g: 0, b: 0 }
+Complementary Color: { r: 0, g: 255, b: 255 }`
+```
+#### Advanced Features
+
+ColorRepoKim  includes a variety of color manipulation features:
+
+- Get Split Complementary Colors
+
+``` javascript
+const splitComplementaryColors = ColorRepoKim .manipulate.getSplitComplementaryColors(sampleColor);
+console.log('Split Complementary Colors:', splitComplementaryColors);`
+```
+- Get Analogous Colors
+
+```javascript
+const analogousColors = ColorRepoKim .manipulate.getAnalogousColors(sampleColor);
+console.log('Analogous Colors:', analogousColors);`
+```
+- Get Monochromatic Colors
+
+  
+```javascript
+  const monochromaticColors = ColorRepoKim .manipulate.getMonochromaticColors(sampleColor, 5);
+  console.log('Monochromatic Colors:', monochromaticColors);`
+```
+- Additional Color Manipulation Methods  
+  ColorRepoKim  provides more advanced color manipulation methods:
+
+  - Triadic Colors
+  - Tetradic Colors
+  - Lighten Color
+  - Darken Color
+  - Invert Color
+
+  Explore these methods in the [API Documentation](https://color-repo-kim.vercel.app/).
+
+#### API Documentation
+
+For detailed information on all available methods and their parameters, refer to the [API Documentation](https://color-repo-kim.vercel.app/).
+
+#### Examples
+
+#### React Component
+```javascript
+  export const Component = (props) => {
+    const { baseColor } = props;
+    const [currentColor, setCurrentColor] = useState(baseColor);
+  
+    return (
+        <article className={`...other bg-${currentColor}-500`}>
+          <button>click me</button>
+        </article>
+  )
+```
+  
+
+#### Contributing
+
+If you have ideas for new features, improvements, or find any issues, feel free to contribute by opening an issue or a pull request.
+
+#### License
+
+This library is licensed under the MIT License - see the file for details. [LICENSE](https://opensource.org/license/mit/)This expanded README includes sections for API Documentation, Examples, and a basic React Component.
