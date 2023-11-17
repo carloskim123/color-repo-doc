@@ -1,11 +1,12 @@
 {
+  "version updates": "Version Updates",
   "index": "Overview",
   "installation": "Installation",
-  "conversions": "conversions",
-  "manipulation": "manipulation",
-  "info-extraction": "info-extraction",
-  "parsing": "parsing",
-  "validation": "validation",
+  "conversions": "Conversions",
+  "manipulation": "Manipulation",
+  "info-extraction": "Basic Info Extraction",
+  "parsing": "Parsing",
+  "validation": "Validation",
   "contact": {
     "title": "Contact ↗",
     "type": "page",
