@@ -19,13 +19,13 @@ const config: DocsThemeConfig = {
   },
    logo: (
     <>
-      <div>🌚</div>
+      <div>🎨</div>
       <span style={{ marginLeft: '.4em', fontWeight: "normal" }}>
         Color Repo Kim
       </span>
     </>
   ),
-  faviconGlyph: "🌚"
+  faviconGlyph: "🎨"
 }
 
 export default config
