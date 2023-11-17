@@ -8,7 +8,7 @@ const config: DocsThemeConfig = {
   chat: {
     link: 'https://discord.com',
   },
-  docsRepositoryBase: 'https://github.com/carloskim123/rebuild-docs',
+  docsRepositoryBase: 'https://github.com/carloskim123/color-repo-doc',
   footer: {
     text: 'Color Repo Kim',
   },
