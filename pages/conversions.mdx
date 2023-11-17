@@ -5,10 +5,10 @@
 To convert an RGB color to HEX, use the `rgbToHex` method:
 
 ```javascript
-import { ColorRepoKim } from 'color-repo-kim'
+import { convertModule } from 'color-repo-kim'
 
 const rgbColor = { r: 255, g: 0, b: 0 };
-const hexColor = ColorRepoKim.convert.rgbToHex(rgbColor);
+const hexColor = convertModule.rgbToHex(rgbColor);
 
 console.log('RGB Color:', rgbColor);
 console.log('HEX Color:', hexColor);
@@ -18,10 +18,10 @@ console.log('HEX Color:', hexColor);
 Converting a HEX color to RGB is just as straightforward:
 
 ```javascript
-import { ColorRepoKim } from 'color-repo-kim'
+import { convertModule } from 'color-repo-kim'
 
 const hexColor = '#ff0000';
-const rgbColor = ColorRepoKim.convert.hexToRgb(hexColor);
+const rgbColor = convertModule.hexToRgb(hexColor);
 
 console.log('HEX Color:', hexColor);
 console.log('RGB Color:', rgbColor);
@@ -31,10 +31,10 @@ console.log('RGB Color:', rgbColor);
 To convert an RGB color to HSL, use the rgbToHsl method:
 
 ```javascript
-import { ColorRepoKim } from 'color-repo-kim'
+import { convertModule } from 'color-repo-kim'
 
 const rgbColor = { r: 255, g: 0, b: 0 };
-const hslColor = ColorRepoKim.convert.rgbToHsl(rgbColor);
+const hslColor = convertModule.rgbToHsl(rgbColor);
 
 console.log('RGB Color:', rgbColor);
 console.log('HSL Color:', hslColor);
@@ -44,10 +44,10 @@ console.log('HSL Color:', hslColor);
 Converting HSL back to RGB is done with the hslToRgb method:
 
 ```javascript
-import { ColorRepoKim } from 'color-repo-kim'
+import { convertModule } from 'color-repo-kim'
 
 const hslColor = { h: 0, s: 100, l: 50 };
-const rgbColor = ColorRepoKim.convert.hslToRgb(hslColor);
+const rgbColor = convertModule.hslToRgb(hslColor);
 
 console.log('HSL Color:', hslColor);
 console.log('RGB Color:', rgbColor);
@@ -58,11 +58,12 @@ console.log('RGB Color:', rgbColor);
 To convert an HSL color to HEX, you can combine the hslToRgb and rgbToHex methods:
 
 ```javascript
-import { ColorRepoKim } from 'color-repo-kim'
+import { convertModule } from 'color-repo-kim'
+
 
 const hslColor = { h: 0, s: 100, l: 50 };
-const rgbColor = ColorRepoKim.convert.hslToRgb(hslColor);
-const hexColor = ColorRepoKim.convert.rgbToHex(rgbColor);
+const rgbColor = convertModule.hslToRgb(hslColor);
+const hexColor = convertModule.rgbToHex(rgbColor);
 
 console.log('HSL Color:', hslColor);
 console.log('HEX Color:', hexColor);
@@ -73,11 +74,12 @@ console.log('HEX Color:', hexColor);
 Converting HEX to HSL involves using the hexToRgb and rgbToHsl methods:
 
 ```javascript
-import { ColorRepoKim } from 'color-repo-kim'
+import { convertModule } from 'color-repo-kim'
+
 
 const hexColor = '#ff0000';
-const rgbColor = ColorRepoKim.convert.hexToRgb(hexColor);
-const hslColor = ColorRepoKim.convert.rgbToHsl(rgbColor);
+const rgbColor = convertModule.hexToRgb(hexColor);
+const hslColor = convertModule.rgbToHsl(rgbColor);
 
 console.log('HEX Color:', hexColor);
 console.log('HSL Color:', hslColor);

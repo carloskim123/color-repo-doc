@@ -11,10 +11,10 @@ Color manipulation involves changing the properties of a color, such as its hue,
 The `getComplementaryColor` method allows you to obtain the complementary color of a given color:
 
 ```javascript
-import { ColorRepoKim } from 'color-repo-kim'
+import { manipulateModule } from 'color-repo-kim'
 
 const baseColor = { r: 255, g: 0, b: 0 };
-const complementaryColor = ColorRepoKim.manipulate.getComplementaryColor(baseColor);
+const complementaryColor = manipulateModule.getComplementaryColor(baseColor);
 
 console.log('Base Color:', baseColor);
 console.log('Complementary Color:', complementaryColor);
@@ -25,10 +25,10 @@ console.log('Complementary Color:', complementaryColor);
 Use the getAnalogousColors method to get an array of analogous colors for a given color:
 
 ```javascript
-import { ColorRepoKim } from 'color-repo-kim'
+import { manipulateModule } from 'color-repo-kim'
 
 const baseColor = { r: 255, g: 0, b: 0 };
-const analogousColors = ColorRepoKim.manipulate.getAnalogousColors(baseColor);
+const analogousColors = manipulateModule.getAnalogousColors(baseColor);
 
 console.log('Base Color:', baseColor);
 console.log('Analogous Colors:', analogousColors);
@@ -38,10 +38,10 @@ console.log('Analogous Colors:', analogousColors);
 The getTriadicColors method provides an array of triadic colors for a given color:
 
 ```javascript
-import { ColorRepoKim } from 'color-repo-kim'
+import { manipulateModule } from 'color-repo-kim'
 
 const baseColor = { r: 255, g: 0, b: 0 };
-const triadicColors = ColorRepoKim.manipulate.getTriadicColors(baseColor);
+const triadicColors = manipulateModule.getTriadicColors(baseColor);
 
 console.log('Base Color:', baseColor);
 console.log('Triadic Colors:', triadicColors);
@@ -52,10 +52,10 @@ console.log('Triadic Colors:', triadicColors);
 Obtain an array of tetradic colors using the getTetradicColors method:
 
 ```javascript
-import { ColorRepoKim } from 'color-repo-kim'
+import { manipulateModule } from 'color-repo-kim'
 
 const baseColor = { r: 255, g: 0, b: 0 };
-const tetradicColors = ColorRepoKim.manipulate.getTetradicColors(baseColor);
+const tetradicColors = manipulateModule.getTetradicColors(baseColor);
 
 console.log('Base Color:', baseColor);
 console.log('Tetradic Colors:', tetradicColors);
@@ -65,10 +65,10 @@ console.log('Tetradic Colors:', tetradicColors);
 Generate monochromatic colors using the getMonochromaticColors method:
 
 ```javascript
-import { ColorRepoKim } from 'color-repo-kim'
+import { manipulateModule } from 'color-repo-kim'
 
 const baseColor = { r: 255, g: 0, b: 0 };
-const monochromaticColors = ColorRepoKim.manipulate.getMonochromaticColors(baseColor, 5);
+const monochromaticColors = manipulateModule.getMonochromaticColors(baseColor, 5);
 
 console.log('Base Color:', baseColor);
 console.log('Monochromatic Colors:', monochromaticColors);
@@ -79,10 +79,10 @@ console.log('Monochromatic Colors:', monochromaticColors);
 Lighten a color using the lightenColor method:
 
 ```javascript
-import { ColorRepoKim } from 'color-repo-kim'
+import { manipulateModule } from 'color-repo-kim'
 
 const baseColor = { r: 255, g: 0, b: 0 };
-const lightenedColor = ColorRepoKim.manipulate.lightenColor(baseColor, 20);
+const lightenedColor = manipulateModule.lightenColor(baseColor, 20);
 
 console.log('Base Color:', baseColor);
 console.log('Lightened Color:', lightenedColor);
@@ -92,10 +92,10 @@ console.log('Lightened Color:', lightenedColor);
 Darken a color using the darkenColor method:
 
 ```javascript
-import { ColorRepoKim } from 'color-repo-kim'
+import { manipulateModule } from 'color-repo-kim'
 
 const baseColor = { r: 255, g: 0, b: 0 };
-const darkenedColor = ColorRepoKim.manipulate.darkenColor(baseColor, 20);
+const darkenedColor = manipulateModule.darkenColor(baseColor, 20);
 
 console.log('Base Color:', baseColor);
 console.log('Darkened Color:', darkenedColor);
@@ -106,10 +106,10 @@ Invert a color using the invertColor method:
 
 ```javascript
 Copy code
-import { ColorRepoKim } from 'color-repo-kim'
+import { manipulateModule } from 'color-repo-kim'
 
 const baseColor = { r: 255, g: 0, b: 0 };
-const invertedColor = ColorRepoKim.manipulate.invertColor(baseColor);
+const invertedColor = manipulateModule.invertColor(baseColor);
 
 console.log('Base Color:', baseColor);
 console.log('Inverted Color:', invertedColor);

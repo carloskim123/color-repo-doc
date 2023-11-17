@@ -3,7 +3,7 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
   project: {
-    link: 'https://github.com/carloskim123/rebuild-docs',
+    link: 'https://github.com/carloskim123/color-repo-doc',
   },
   chat: {
     link: 'https://discord.com',
@@ -20,7 +20,7 @@ const config: DocsThemeConfig = {
    logo: (
     <>
       <div>🌚</div>
-      <span style={{ marginLeft: '.4em', fontWeight: 800 }}>
+      <span style={{ marginLeft: '.4em', fontWeight: "normal" }}>
         Color Repo Kim
       </span>
     </>

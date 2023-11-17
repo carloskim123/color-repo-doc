@@ -8,6 +8,8 @@ Color Repo Kim provides methods to validate different formats of colors.
 To check if a color string follows the HEX format (e.g., "#RRGGBB" or "RRGGBB"):
 
 ```javascript
+import { validateModule } from 'color-repo-kim'
+
 const hexColor = '#00FF00';
 
 // Validate HEX color format
@@ -21,6 +23,8 @@ console.log(`Is "${hexColor}" a valid HEX color?`, isValidHex);
 To ensure that the RGB color values are within the valid range (0-255):
 
 ```javascript
+import { validateModule } from 'color-repo-kim'
+
 const rgbColor = { r: 255, g: 128, b: 64 };
 
 // Validate RGB color values
@@ -34,6 +38,8 @@ console.log(`Are the RGB values ${rgbColor.r}, ${rgbColor.g}, ${rgbColor.b}`);
 To verify that the HSL color values are within the acceptable range:
 
 ```javascript
+import { validateModule } from 'color-repo-kim'
+
 const hslColor = { h: 200, s: 50, l: 70 };
 
 // Validate HSL color values
@@ -44,9 +50,12 @@ console.log(`Are the HSL values ${hslColor.h}, ${hslColor.s}, ${hslColor.l} vali
 ## Validating HEX Color values
 
 ``isValidHex(hex: string): boolean``
+
 Checks if the provided string is a valid HEX color format.
 
 ```javascript
+import { validateModule } from 'color-repo-kim'
+
 const hexColor = '#00FF00';
 const isValidHex = validateModule.isValidHex(hexColor);
 // Output: true
